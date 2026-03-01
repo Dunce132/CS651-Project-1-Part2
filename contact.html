@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <title>Contact - Company A</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Company A</a>
@@ -19,15 +18,15 @@
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container mt-4">
-    <img src="../images/contact.jpg" alt="Contact" class="img-fluid">
+  <main class="container mt-5">
+    <img src="images/contact.jpg" alt="Contact" class="img-fluid mb-4">
 
     <div class="float-box">
       <p>Email: abc@email.com</p>
@@ -36,16 +35,21 @@
     <h2>Contact Us</h2>
 
     <form onsubmit="showAlert(); return false;">
-      <label>Name:</label>
-      <input type="text" class="form-control mb-2" required>
+      <label for="name">Name:</label>
+      <input type="text" id="name" class="form-control mb-2" required>
 
-      <label>Email:</label>
-      <input type="email" class="form-control mb-2" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" class="form-control mb-2" required>
 
       <button class="btn btn-primary">Submit</button>
     </form>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showAlert() {
+      alert("Thank you for reaching out! We will get back to you soon.");
+    }
+  </script>
 </body>
 </html>
