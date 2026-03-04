@@ -17,3 +17,42 @@ body {
   border: 2px solid #333;
   background-color: #f2f2f2;
 }
+
+.hero-section {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1558002038-1055907df827') center/cover no-repeat;
+}
+
+.product-visual {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1581090700227-4c4f50a2c4e9') center/cover no-repeat;
+}
+
+.demo-section {
+  height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1555949963-aa79dcee981c') center/cover no-repeat;
+}
+
+.final-cta {
+  height: 40vh;
+  background-color: #111;
+}
+
+section h2 {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section ul {
+  margin-top: 15px;
+}
+
+section ul li {
+  margin-bottom: 8px;
+}
